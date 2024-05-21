@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Twitter</title>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class=" bg-black text-white">
+  <div class="flex container mx-auto ">
+    <div class="first w-10 md:w-[70%]">
+      
+
+      <div class="sidebar flex flex-col md:ml-8 items-end justify-end mt-4 sticky top-0 px-14">
+        <ul class="flex flex-col text-xl space-y-3  ml-32">
+          
+            <svg viewBox="0 0 24 24" aria-hidden="true"
+            class="w-8 invert ml-5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+              </path>
+            </g>
+          </svg>
+          
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">home</span><span class="hidden md:block">Home</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">search</span><span class="hidden md:block">Explore</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">notifications</span><span class="hidden md:block">Notifications</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">mail</span><span class="hidden md:block">Messages</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">home</span><span class="hidden md:block">Grok</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">home</span><span class="hidden md:block">Lists</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">bookmark</span><span class="hidden md:block">Bookmark</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">group</span><span class="hidden md:block">Communities</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">home</span><span class="hidden md:block">Premium</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">person</span><span class="hidden md:block">Profile</span></li>
+          <li class="flex gap-3 hover:cursor-pointer  w-fit hover:bg-gray-900 hover:rounded-full px-5 py-2 text-gray-300"> <span class="text-2xl material-symbols-outlined">pending</span><span class="hidden md:block">More</span></li>
+          <button class="bg-blue-500 hidden md:block text-white w-4/5 py-3 rounded-full font-bold">Post</button>
+          <button class="bg-blue-500 md:hidden  text-white w-4/5 py-3 rounded-full font-bold">
+            <span class="text-2xl material-symbols-outlined">draw</span>
+          </button>
+
+        </ul>
+
+        <div class="profile hidden md:block">
+          <div class="item px-10 flex gap-3 my-28 items-center cursor-pointer">
+            <img src="m.png" class="w-10 h-10 rounded-full">
+            <div class="name flex flex-col">
+              <h1 class="hover:underline">Mili Dhara</h1>
+              <h3 class="text-xm text-gray-500">@mili_dhara</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="second w-full border border-x-gray-700 border-y-black">
+      <div class="topbar relative flex border border-b-gray-700 border-y-black border-x-black p-2 py-3 sticky top-0 opacity-60 backdrop-blur-3xl bg-black">
+        <div class="absolute w-16 h-1 rounded-full bg-blue-400 bottom-0 left-[18%]"></div>
+        <div class="left w-1/2 flex justify-center ">For you</div>
+        <div class="right w-1/2 flex justify-center">Following</div>
+        <div class="settings mx-3"><span class="text-xl material-symbols-outlined">settings</span></div>
+      </div>
+
+      <div class="post w-full flex">
+        <img src="m.png" class="w-10 h-10 rounded-full m-4">
+        <input class="w-full bg-transparent text-xl outline-none" type="text" placeholder="What is happening?!">
+      </div>
+
+      <div class="globe flex text-sm font-medium text-blue-400 items-center ml-16 gap-1 w-4/12 hover:bg-gray-900  rounded-full cursor-pointer">
+        <span class="text-xl material-symbols-outlined">globe_asia</span>
+        <span>Everyone can reply</span>
+      </div>
+      <hr class="border-gray-700 ml-14 mr-7 mt-3">
+
+      <div class="blueicons flex text-blue-400 ml-16  my-4">
+        <span class="text-xl material-symbols-outlined hover:bg-gray-900  rounded-full p-1 cursor-pointer">image</span>
+        <span class="text-xl material-symbols-outlined hover:bg-gray-900  rounded-full p-1 cursor-pointer">gif_box</span>
+        <span class="text-xl material-symbols-outlined hover:bg-gray-900  rounded-full p-1 cursor-pointer">ballot</span>
+        <span class="text-xl material-symbols-outlined hover:bg-gray-900  rounded-full p-1 cursor-pointer">sentiment_satisfied</span>
+        <span class="text-xl material-symbols-outlined hover:bg-gray-900  rounded-full p-1 cursor-pointer">calendar_clock</span>
+        <span class="text-xl material-symbols-outlined hover:bg-gray-900  rounded-full p-1 cursor-pointer opacity-45">location_on</span>
+        <button class="bg-blue-400 text-white px-5 py-2 rounded-full font-bold ml-auto mr-7 opacity-45">Post</button>
+      </div>
+      <hr class="border-gray-700">
+
+      <div class="showpost text-blue-400 flex justify-center p-3 cursor-pointer hover:bg-gray-950">Show 245 posts</div>
+      <hr class="border-gray-700">
+
+      <div class="random-posts">
+        <div class="post flex gap-4 m-4 cursor-pointer">
+          <div class="image w-36 h-36">
+            <img src="satya.jpg" class="rounded-full">
+          </div>
+          <div class="content flex flex-col gap-3">
+            <span>Satya Nadella <span class="text-gray-500">@satyanadella · May 13</span></span>
+            <div>It's fantastic to be in Indonesia meeting with innovators like Andri, Elsa, and the team at eFishery, who are applying next-generation AI to make aquaculture more productive – and sustainable. </div>
+            <div class="post-pic ">
+              <img src="satya-post.jpeg" class="rounded-3xl">
+            </div>
+            <a class="text-gray-500 text-sm -mt-2 hover:underline cursor-pointer">From news.microsoft.com</a>
+          
+            <div class="options flex justify-around">
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">maps_ugc</span>
+                <span class="text-gray-500 hover:text-blue-500">13</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-green-900  hover:text-green-400 rounded-full p-1 cursor-pointer">repeat</span>
+                <span class="text-gray-500 hover:text-green-400">46</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-pink-900  hover:text-pink-500 rounded-full p-1 cursor-pointer">favorite</span>
+                <span class="text-gray-500  hover:text-pink-500">436</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900  hover:text-blue-500 rounded-full p-1 cursor-pointer">grouped_bar_chart</span>
+                <span class="text-gray-500  hover:text-blue-500">64K</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">bookmark</span>
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">upload</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-gray-700">
+
+        <div class="post flex gap-4 m-4 cursor-pointer">
+          <div class="image w-36 h-36">
+            <img src="satya.jpg" class="rounded-full">
+          </div>
+          <div class="content flex flex-col gap-3">
+            <span>Satya Nadella <span class="text-gray-500">@satyanadella · May 13</span></span>
+            <div>It's fantastic to be in Indonesia meeting with innovators like Andri, Elsa, and the team at eFishery, who are applying next-generation AI to make aquaculture more productive – and sustainable. </div>
+            <div class="post-pic ">
+              <img src="satya-post.jpeg" class="rounded-3xl">
+            </div>
+            <a class="text-gray-500 text-sm -mt-2 hover:underline cursor-pointer">From news.microsoft.com</a>
+          
+            <div class="options flex justify-around">
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">maps_ugc</span>
+                <span class="text-gray-500 hover:text-blue-500">13</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-green-900  hover:text-green-400 rounded-full p-1 cursor-pointer">repeat</span>
+                <span class="text-gray-500 hover:text-green-400">46</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-pink-900  hover:text-pink-500 rounded-full p-1 cursor-pointer">favorite</span>
+                <span class="text-gray-500  hover:text-pink-500">436</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900  hover:text-blue-500 rounded-full p-1 cursor-pointer">grouped_bar_chart</span>
+                <span class="text-gray-500  hover:text-blue-500">64K</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">bookmark</span>
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">upload</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-gray-700">
+
+        <div class="post flex gap-4 m-4 cursor-pointer">
+          <div class="image w-36 h-36">
+            <img src="satya.jpg" class="rounded-full">
+          </div>
+          <div class="content flex flex-col gap-3">
+            <span>Satya Nadella <span class="text-gray-500">@satyanadella · May 13</span></span>
+            <div>It's fantastic to be in Indonesia meeting with innovators like Andri, Elsa, and the team at eFishery, who are applying next-generation AI to make aquaculture more productive – and sustainable. </div>
+            <div class="post-pic ">
+              <img src="satya-post.jpeg" class="rounded-3xl">
+            </div>
+            <a class="text-gray-500 text-sm -mt-2 hover:underline cursor-pointer">From news.microsoft.com</a>
+          
+            <div class="options flex justify-around">
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">maps_ugc</span>
+                <span class="text-gray-500 hover:text-blue-500">13</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-green-900  hover:text-green-400 rounded-full p-1 cursor-pointer">repeat</span>
+                <span class="text-gray-500 hover:text-green-400">46</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-pink-900  hover:text-pink-500 rounded-full p-1 cursor-pointer">favorite</span>
+                <span class="text-gray-500  hover:text-pink-500">436</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900  hover:text-blue-500 rounded-full p-1 cursor-pointer">grouped_bar_chart</span>
+                <span class="text-gray-500  hover:text-blue-500">64K</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">bookmark</span>
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">upload</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-gray-700">
+
+        <div class="post flex gap-4 m-4 cursor-pointer">
+          <div class="image w-36 h-36">
+            <img src="satya.jpg" class="rounded-full">
+          </div>
+          <div class="content flex flex-col gap-3">
+            <span>Satya Nadella <span class="text-gray-500">@satyanadella · May 13</span></span>
+            <div>It's fantastic to be in Indonesia meeting with innovators like Andri, Elsa, and the team at eFishery, who are applying next-generation AI to make aquaculture more productive – and sustainable. </div>
+            <div class="post-pic ">
+              <img src="satya-post.jpeg" class="rounded-3xl">
+            </div>
+            <a class="text-gray-500 text-sm -mt-2 hover:underline cursor-pointer">From news.microsoft.com</a>
+          
+            <div class="options flex justify-around">
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">maps_ugc</span>
+                <span class="text-gray-500 hover:text-blue-500">13</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-green-900  hover:text-green-400 rounded-full p-1 cursor-pointer">repeat</span>
+                <span class="text-gray-500 hover:text-green-400">46</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-pink-900  hover:text-pink-500 rounded-full p-1 cursor-pointer">favorite</span>
+                <span class="text-gray-500  hover:text-pink-500">436</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900  hover:text-blue-500 rounded-full p-1 cursor-pointer">grouped_bar_chart</span>
+                <span class="text-gray-500  hover:text-blue-500">64K</span>
+              </div>
+              <div class="react text-gray-500 flex items-center">
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">bookmark</span>
+                <span class="text-xl material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 rounded-full p-1 cursor-pointer">upload</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-gray-700">
+      </div>
+
+    </div>
+    <div class="third w-full  my-2 hidden md:block   ">
+      <div class="search mx-8">
+        <input type="text" class="w-96 rounded-full bg-gray-900 text-gray-950 px-4 py-2" placeholder="Search">
+      </div>
+
+      <div class="subscribe w-96 border rounded-2xl border-gray-700 mx-8 my-5 p-3">
+        <h1 class="font-bold text-xl">Subscribe to Premium</h1>
+        <p class="my-2 text-gray-200">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+        <button class="bg-blue-400 text-white px-5 py-2 rounded-full font-bold ">Subscribe</button>
+      </div>
+      <div class="whats flex flex-col w-96 border rounded-2xl border-gray-700 mx-8 my-5 p-3">
+        <h1 class="font-bold text-xl px-2">What's happening</h1>
+
+        <div class="item my-1 p-2 px-2 hover:bg-gray-950 cursor-pointer">
+          <div class="text-xm text-gray-500">Trending in India</div>
+          <div>#Iran</div>
+          <div class="text-xm text-gray-500">248K posts</div>
+        </div>
+
+        <div class="item my-1 p-2 px-2 hover:bg-slate-950 cursor-pointer">
+          <div class="text-xm text-gray-500">Only on X - Trending</div>
+          <div>#Iran</div>
+          <div class="text-xm text-gray-500">25.3K posts</div>
+        </div>
+
+        <div class="item my-1 p-2 px-2 hover:bg-slate-950 cursor-pointer">
+          <div class="text-xm text-gray-500">Entertainment Trending</div>
+          <div>#Iran</div>
+          <div class="text-xm text-gray-500">8,883 posts</div>
+        </div>
+
+        <div class="item my-1 p-2 px-2 hover:bg-slate-950 cursor-pointer">
+          <div class="text-xm text-gray-500">Trending in India</div>
+          <div>#Iran</div>
+          <div class="text-xm text-gray-500">4,973 posts</div>
+        </div>
+
+        <div class="item my-1 p-2 px-2 hover:bg-slate-950 cursor-pointer">
+          <div class="text-xm text-gray-500">Entertainment Trending</div>
+          <div>#Iran</div>
+          <div class="text-xm text-gray-500">142K posts</div>
+        </div>
+
+        <h2 class="text-blue-500 p-2 hover:cursor-pointer">Show more</h2>
+      </div>
+
+      <div class="who flex flex-col w-96 border rounded-2xl border-gray-700 mx-8 my-5 p-3">
+        <h1 class="font-bold text-xl px-2">Who to follow</h1>
+
+        <div class="item px-2 flex gap-3 my-4 hover:bg-slate-950 cursor-pointer">
+          <img src="bill.jpg" class="w-12 h-12 rounded-full">
+          <div class="name flex flex-col">
+            <h1 class="hover:underline">Bill Gates</h1>
+            <h3 class="text-xm text-gray-500">@billgates</h3>
+          </div>
+          <button class="bg-white text-black ml-auto rounded-full px-6 text-sm font-bold hover:bg-gray-200">Follow</button>
+        </div>
+
+        <div class="item px-2 flex gap-3 my-4 hover:bg-slate-950 cursor-pointer">
+          <img src="satya.jpg" class="w-12 h-12 rounded-full">
+          <div class="name flex flex-col">
+            <h1 class="hover:underline">Satya Nadella</h1>
+            <h3 class="text-xm text-gray-500">@satyanadella</h3>
+          </div>
+          <button class="bg-white text-black ml-auto rounded-full px-6 text-sm font-bold hover:bg-gray-200">Follow</button>
+        </div>
+
+        <div class="item px-2 flex gap-3 my-4 hover:bg-slate-950 cursor-pointer">
+          <img src="indra.jpg" class="w-12 h-12 rounded-full">
+          <div class="name flex flex-col">
+            <h1 class="hover:underline">Indra Nooyi</h1>
+            <h3 class="text-xm text-gray-500">@Indra_Noooyi</h3>
+          </div>
+          <button type="submit" class="bg-white text-black ml-auto rounded-full px-6 text-sm font-bold hover:bg-gray-200">Follow</button>
+        </div>
+        <h2 class="text-blue-500 p-2 hover:cursor-pointer">Show more</h2>
+      </div>
+
+      <div class="hyperlinks mx-8 w-96 text-xs text-gray-500">
+        <span class="hover:underline mx-3">Terms of Service</span>
+        <span class="hover:underline mx-3">Privacy Policy</span>
+        <span class="hover:underline mx-3">Cookie Policy</span>
+        <span class="hover:underline mx-3">Accessibility</span>
+        <span class="hover:underline mx-3">Ads info</span>
+        <span class="hover:underline mx-3">More</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
