@@ -44,5 +44,5 @@ This project is licensed under the MIT License.
 ### Contact
 
 Mili Dhara - milidharansde@gmail.com
-Project Link: https://github.com/mili-dhara/My-Twitter-Clone
+Project Link: [https://github.com/mili-dhara/My-Twitter-Clone](https://github.com/mili-dhara/My_Twitter_Clone)
 
